@@ -1,0 +1,25 @@
+{
+  "name": "karademy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Saeed-Sufi <Sufi.geo@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.0",
+    "gulp-watch": "^5.0.1",
+    "postcss-hexrgba": "^2.0.1",
+    "postcss-import": "^14.0.2",
+    "postcss-nested": "^5.0.5",
+    "postcss-simple-vars": "^6.0.3"
+  },
+  "dependencies": {
+    "lazysizes": "^5.3.2",
+    "normalize.css": "^8.0.1"
+  }
+}
