@@ -3,7 +3,7 @@
 
   &__img {
     position: relative;
-    background-image: url("../assets/images/campaign-banner.jpg");
+    background-image: url("../images/campaign-banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
