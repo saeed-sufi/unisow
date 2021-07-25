@@ -1,0 +1,46 @@
+.hero {
+  padding-top: 4rem;
+
+  button {
+    text-transform: capitalize;
+  }
+
+  &__title {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 320px;
+    text-align: center;
+    & h1 {
+      margin-top: 0;
+    }
+
+    @mixin atMedium {
+      & h1 {
+        margin-top: .67em;
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__btns {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 280px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__btns > *:first-child {
+    margin-right: 1rem;
+  }
+
+  &__btns > * {
+    font-size: 1rem;
+  }
+}

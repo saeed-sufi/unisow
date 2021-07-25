@@ -1,0 +1,17 @@
+.container {
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 1rem;
+
+  &--less-padding-until-small {
+    padding: 0 .5rem;
+  }
+  
+  @mixin atSmall {
+    &--less-padding-until-small {
+      padding: 0 1rem;
+    }  
+  }
+
+}

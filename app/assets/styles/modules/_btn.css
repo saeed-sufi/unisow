@@ -1,0 +1,37 @@
+.btn {
+  background-color: #28a845;
+  color: #fff;
+  padding: 0.6rem .8rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px 3px rgba(40, 168, 69, 0.2);
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    color: #28a845;
+    background-color: #fff;
+    border: 1px solid #28a845;
+  }
+
+  &--white-bgc {
+    background-color: #fff;
+  }
+  
+  &--green {
+    color: #28a845;
+  }
+
+  &--green-border {
+    border: 1px solid #28a845;
+  }
+
+  &--bxsh-on-hover:hover {
+    box-shadow: 0px 0px 10px 3px rgba(40, 168, 69, .35);
+  }
+
+  @mixin atMedium {
+    padding: 0.6rem 1.2rem;
+  }
+}

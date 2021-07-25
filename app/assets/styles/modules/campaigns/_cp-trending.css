@@ -1,0 +1,26 @@
+.cp-trending {
+
+  padding: 0;
+  border-radius: 10px;
+
+  &__header {
+    margin-top: 0;
+  }
+  &__nav {
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-start;
+  }
+
+  &__nav a {
+    transition: color 0.3s;
+  }
+
+  &__nav > * {
+    margin-right: 0.5rem;
+  }
+
+  button {
+    margin-top: 1rem;
+  }
+}

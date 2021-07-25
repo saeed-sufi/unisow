@@ -1,0 +1,92 @@
+.row {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 1 auto;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+
+  @mixin atMedium {
+    &--larger-margin {
+      margin-left: -1rem;
+      margin-right: -1rem;
+    }
+  }
+}
+
+.col {
+  &-xs,
+  &-xs-12 {
+    flex: 0 0 auto;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  &-xs-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  @mixin atMedium {
+    &-md,
+    &-md-3,
+    &-md-4,
+    &-md-6,
+    &-md-8 {
+      flex: 0 0 auto;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+
+    &-md-3 {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+
+    &-md-4 {
+      flex: 0 0 33.333%;
+      max-width: 33.333%;
+    }
+
+    &-md-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    &-md-8 {
+      flex: 0 0 66.667%;
+      max-width: 66.667%;
+    }
+  }
+
+  @mixin atVeryLarge {
+    &-vlg,
+    &-vlg-3,
+    &-vlg-4,
+    &-vlg-9 {
+      flex: 0 0 auto;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+
+    &-vlg-3 {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+
+    &-vlg-4 {
+      flex: 0 0 33.333%;
+      max-width: 33.333%;
+    }
+
+    &-vlg-9 {
+      flex: 0 0 75%;
+      max-width: 75%;
+    }
+  }
+
+  &--larger-padding {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}

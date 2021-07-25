@@ -1,0 +1,111 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0;
+
+  @mixin atSmall {
+    flex-direction: column;
+  }
+
+  @mixin atMedium {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    @mixin atMedium {
+      margin-right: 2rem;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @mixin atSmall {
+      & > * {
+        margin-bottom: 2rem;
+      }
+    }
+
+    @mixin atMedium {
+      flex-direction: row;
+      & > * {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__menu li > * {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    transition: color 0.3s;
+  }
+
+  &__menu li:hover a {
+    color: $green;
+  }
+
+  ul li {
+    position: relative;
+  }
+
+  ul li a {
+    padding: 0.5rem;
+  }
+
+ ul li:last-child a{
+  padding-right: 0;
+ }
+
+  ul li a::after {
+    position: absolute;
+    content: "";
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: $green;
+    transition: all 0.4s;
+    left: 50%;
+    bottom: -8px;
+    opacity: 0;
+  }
+
+  ul li a:hover::after {
+    opacity: 1;
+  }
+
+  &__menu ul {
+    display: none;
+
+    @mixin atSmall {
+      display: flex;
+    }
+  }
+
+  &__icons i {
+    transition: color 0.3s;
+  }
+
+  &__icons i:hover {
+    color: $green;
+  }
+
+  &__icons li > * {
+    transition: color 0.3s;
+  }
+
+  &__icons li:hover a {
+    color: $green;
+  }
+
+  &__icons ul {
+    display: none;
+
+    @mixin atSmall {
+      display: flex;
+    }
+  }
+}

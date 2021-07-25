@@ -1,0 +1,70 @@
+.menu-icon {
+
+  background-color: $green;
+  padding: .5rem .7rem;
+  border-radius: 3px;
+  position: absolute;
+  right: 17px;
+  top: 14px;
+  height: 40px;
+  width: 51px;
+  transition: all .3s;
+
+  
+  @mixin atLarge {
+    display: none;
+  }
+  
+  &__top {
+    position: relative;
+    width: 30px;
+    height: 1px;
+    background-color: #fff;
+    top: 1px;
+    transition: all .3s;
+    
+  }
+  
+  &__middle {
+    position: relative;
+    top: 10.5px;
+    width: 30px;
+    height: 1px;
+    background-color: #fff;
+    transition: all .3s;
+  }
+  
+  &__bottom {
+    position: relative;
+    top: 19px;
+    width: 30px;
+    height: 1px;
+    background-color: #fff;
+    transition: all .3s;
+  }
+
+  &--rotate {
+    transform: rotate(-90deg);
+    background-color: #fff;
+
+    .menu-icon__top {
+      transform: rotate(45deg);
+      transform-origin: bottom left;
+      background-color: $green;
+      height: 2px;
+    }
+
+    .menu-icon__middle {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .menu-icon__bottom {
+      transform: rotate(-45deg);
+      transform-origin: 8% 100%;
+      background-color: $green;
+      height: 2px;
+      top: 18px;
+    }
+  }
+}
