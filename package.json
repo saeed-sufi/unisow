@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
+    "gulp-htmlmin": "^5.0.1",
     "lazysizes": "^5.3.2",
     "normalize.css": "^8.0.1"
   }
