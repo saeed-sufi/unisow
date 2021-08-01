@@ -2,17 +2,21 @@ const gulp = require("gulp")
 const { series } = require("gulp")
 const browserSync = require("browser-sync").create()
 
+gulp.task("cssInject", () => {
+  return gulp.src("./app/temp/styles.css").pipe(browserSync.stream())
+})
+
 gulp.task('watch', () => {
   browserSync.init({
     notify: false,
     open: false,
     server: {
       baseDir: "app",
-      index: "campaign.html",
+      index: "index.html",
     },
   })
 
-  gulp.watch("./app/campaign.html", function reload(cb) {
+  gulp.watch("./app/index.html", function reload(cb) {
     browserSync.reload()
     cb()
   })

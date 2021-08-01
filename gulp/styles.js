@@ -12,7 +12,3 @@ gulp.task("styles", () => {
     .pipe(postcss([autoprefixer(), cssVars, cssImport, mixins, nested]))
     .pipe(gulp.dest("./app/temp"))
 })
-
-gulp.task("cssInject", () => {
-  return gulp.src("./app/temp/styles.css").pipe(browserSync.stream())
-})

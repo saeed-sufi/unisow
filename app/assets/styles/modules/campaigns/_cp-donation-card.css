@@ -49,8 +49,20 @@
     line-height: 1.2;
   }
 
-  &__top-header {
-    margin-top: 4rem;
+  &--huge-mt {
+    margin-top: 2rem;
+
+    @mixin atMedium {
+      margin-top: 20rem;
+    }
+
+    @mixin atVeryLarge {
+      margin-top: 18.6rem;
+    }
+  }
+
+  &--center {
+    text-align: center;
   }
 }
 

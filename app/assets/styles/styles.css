@@ -5,7 +5,7 @@
 @import "./modules/_page-section.css";
 @import "./modules/_container.css";
 @import "./modules/_header.css";
-@import "./modules/_btn.css";
+@import "./modules/components/_btn.css";
 @import "./modules/_hero.css";
 @import "./modules/_menu-icon.css";
 @import "./modules/_main-content.css";
@@ -15,6 +15,6 @@
 @import "./modules/campaigns/_cp-hero.css";
 @import "./modules/campaigns/_cp-trending.css";
 @import "./modules/campaigns/_cp-donation-card.css";
-@import "./modules/_col.css";
+@import "./modules/components/_col.css";
 @import "./modules/campaigns/_cp-aside.css";
 @import "./modules/_fas.css";
